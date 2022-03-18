@@ -5,7 +5,9 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <p>i had sexual intercourse with your mother.</p>
+        <p>
+          i had <span className='badwords'>[REDACTED]</span> with your mother.
+        </p>
       </header>
     </div>
   );
