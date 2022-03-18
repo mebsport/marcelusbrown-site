@@ -1,10 +1,11 @@
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <p>Hi.</p>
+        <p>i had sexual intercourse with your mother.</p>
       </header>
     </div>
   );
