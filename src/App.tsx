@@ -1,14 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
+  //Loading Function
+  const [loadingHi, setLoadingHi] = useState(false);
+  const [loadingName, setLoadingName] = useState(false);
+
+  useEffect(() => {
+    setLoadingHi(true);
+    setTimeout(() => {
+      setLoadingHi(false);
+    }, 4000);
+    setLoadingName(true);
+    setTimeout(() => {
+      setLoadingName(false);
+    }, 8000);
+  }, []);
+
+  //App
   return (
     <div className='App'>
-      <header className='App-header'>
-        <p>
-          i had <span className='badwords'>[REDACTED]</span> with your mother.
-        </p>
-      </header>
+      {loadingHi ? (
+        <div className='loading'>
+          {' '}
+          <h1>Hi,</h1>
+        </div>
+      ) : loadingName ? (
+        <div className='loading'>
+          {' '}
+          <h1>I'm Marcelus...</h1>
+        </div>
+      ) : (
+        <header className='App-header'>
+          <p>LOL</p>
+        </header>
+      )}
     </div>
   );
 }
