@@ -10,11 +10,11 @@ function App() {
     setLoadingHi(true);
     setTimeout(() => {
       setLoadingHi(false);
-    }, 4000);
+    }, 2000);
     setLoadingName(true);
     setTimeout(() => {
       setLoadingName(false);
-    }, 8000);
+    }, 4000);
   }, []);
 
   //App
