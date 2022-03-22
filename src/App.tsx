@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import GithubRepos from './components/GithubRepos';
 
 function App() {
   //Loading Function
@@ -31,9 +32,15 @@ function App() {
           <h1>I'm Marcelus...</h1>
         </div>
       ) : (
-        <header className='App-header'>
-          <p>LOL</p>
-        </header>
+        <>
+          <header className='App-header'>
+            <p>PORTFOLIO PLACEHOLDER</p>
+          </header>
+          <div className='main'>
+            <h2>Hello</h2>
+          </div>
+          <GithubRepos/>
+        </>
       )}
     </div>
   );
